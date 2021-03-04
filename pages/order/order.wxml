@@ -1,0 +1,237 @@
+<!--pages/order/order.wxml-->
+<!--<view class="">
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+-->
+<!---->
+<view class="weui-navbar">
+  <block wx:for-items="{{tabs}}">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      {{item}}
+    </view>
+  </block>
+</view>
+<view class="rec" />
+<swiper current="{{activeIndex}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <!--全部-->
+  <swiper-item>
+    <scroll-view class="scl" scroll-y bindscrolltolower="loadMore0">
+      <!--测试用数据-->
+ <view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view> 
+<view class="br"></view>
+<!--测试用数据-->
+<view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>   
+<view class="br"></view>
+
+<!--测试用数据-->
+<view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>   
+<view class="br"></view>
+
+<!--测试用数据-->
+<view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>     
+<view class="br"></view>
+
+    </scroll-view>
+
+    <!--食品-->
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="scl" scroll-y bindscrolltolower="loadMore0">
+      <!--测试用数据-->
+ <view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>
+<view class="br"></view>   
+<!--测试用数据-->
+<view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>   
+<view class="br"></view>   
+
+<!--测试用数据-->
+<view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">752元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>   
+<view class="br"></view>   
+
+    </scroll-view>
+  </swiper-item>
+  <!--外用-->
+  <swiper-item>
+    <scroll-view class="scl" scroll-y bindscrolltolower="loadMore0">
+      <view class="t1">
+  <view class="shop_container">
+    <view class="first_line">
+    <image class="firstimg" src="../../images/massage.jpg"></image>
+  </view>
+  <view class="first_line">
+        <view class="text">产品：</view>
+        <view class="text">单价：</view>
+        <view class="text">库存：</view>
+        <view class="text">数量：</view>
+    </view>
+  
+    <view class="first_line">
+        <view class="text">砭石自动揉腹仪</view>
+        <view class="text">7d52元</view>
+        <view class="text">2673</view>
+        <view class="text">1</view>
+    </view>
+    
+  </view>
+  <view class="t2">规格：砭石自动揉腹仪</view>
+  <view class="t3">砭石自动揉腹仪</view>
+</view>  
+    </scroll-view>  
+  </swiper-item>
+
+</swiper>

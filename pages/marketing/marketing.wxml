@@ -1,0 +1,126 @@
+<!--<view>
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+
+<view class="weui-navbar">
+  <block wx:for-items="{{tabs}}">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      {{item}}
+    </view>
+  </block>
+</view>
+<view class="rec" />
+<swiper current="{{activeIndex}}" class="swiper-box" duration="500" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view class="scl" scroll-y bindscrolltolower="loadMore0">
+      <view class="scl-tab">产品</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="scl" scroll-y bindscrolltolower="loadMore0">
+      <view class="scl-tab">视频</view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+-->
+<!-- <view class="container">
+  <view class="v1"></view>
+  <image class="shop_image" src="../../images/caldosalve.jpg"></image>
+  <view class="v2">
+    <view class="v3"> 
+    <view class="name">精油艾热贴</view>
+    <view class="property">散帖（单片）    （预售）</view>
+    <view>
+      <view class="price">¥4</view>
+      <view>- 100 +</view>
+    </view>
+  </view>
+</view>
+</view>
+
+
+
+
+
+<view class="br"></view>
+<view class="container">
+  <view class="v1"></view>
+  <image class="shop_image" src="../../images/list/food-2.jpg"></image>
+  <view class="v2">
+    <view class="v3"> 
+    <view class="name">精油艾热贴</view>
+    <view class="property">散帖（单片）    （预售）</view>
+    <view>
+      <view class="price">¥4</view>
+      <view>- 100 +</view>
+    </view>
+  </view>
+</view>
+</view>
+<view class="br"></view>
+
+<view class="container">
+  <view class="v1"></view>
+  <image class="shop_image" src="../../images/list/food-2.jpg"></image>
+  <view class="v2">
+    <view class="v3"> 
+    <view class="name">精油艾热贴</view>
+    <view class="property">散帖（单片）    （预售）</view>
+    <view>
+      <view class="price">¥4</view>
+      <view>- 100 +</view>
+    </view>
+  </view>
+</view>
+</view> -->
+<view class="container">
+  <image class="image" src="../../images/massage.jpg"></image>
+  <view class="details">
+    <view class="details-name">砭石自动揉腹仪</view>
+    <view class="details-label">砭石自动揉腹仪</view>
+    <view class="details-reserve">库存: 3499</view>
+    <view class="details-price">单价: 299</view>
+    <view class="details-number">数量: 10</view>
+    <view class="details-allprice">总价格: 2999</view>
+    <view class="check">确认下单</view>
+  </view>
+  <view class="br"></view>
+</view>
+
+<view class="container">
+  <image class="image" src="../../images/massage.jpg"></image>
+  <view class="details">
+    <view class="details-name">砭石自动揉腹仪</view>
+    <view class="details-label">砭石自动揉腹仪</view>
+    <view class="details-reserve">库存: 3499</view>
+    <view class="details-price">单价: 299</view>
+    <view class="details-number">数量: 10</view>
+    <view class="details-allprice">总价格: 2999</view>
+    <view class="check">确认下单</view>
+  </view>
+  <view class="br"></view>
+</view>
+
+<view class="container">
+  <image class="image" src="../../images/massage.jpg"></image>
+  <view class="details">
+    <view class="details-name">砭石自动揉腹仪</view>
+    <view class="details-label">砭石自动揉腹仪</view>
+    <view class="details-reserve">库存: 3499</view>
+    <view class="details-price">单价: 299</view>
+    <view class="details-number">数量: 10</view>
+    <view class="details-allprice">总价格: 2999</view>
+    <view class="check">确认下单</view>
+  </view>
+  <view class="br"></view>
+</view>
+
+
+<!-- <view class="bottom-view"> 
+  <view class="Checkbox"></view>
+  <view class="quanxuan">全选</view>
+  <view class="null"></view>
+  <view class="all">合计：0.00</view>
+  <view class="order">下单</view>
+</view> -->
