@@ -1,0 +1,1 @@
+<v-like like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" />
